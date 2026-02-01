@@ -1,0 +1,505 @@
+{
+	"code": "storagevessel",
+	"class": "Block",
+	"behaviors": [ 
+		{ "name": "GroundStorable", "properties": { "layout": "SingleCenter" } },
+		{ "name": "Unplaceable" },
+		{ "name": "RightClickPickup"} 
+	],
+	"variantgroups": [
+		{ "code": "color", "states": ["blue", "fire", "black", "brown", "cream", "gray", "orange", "red", "tan"] },
+		{ "code": "glazecolor", "states": ["redglaze", "whiteglaze", "brownglaze", "yellowglaze", "greenglaze", "blueglaze"]},
+		{ "code": "state", "states": ["glaze"]}
+	],
+	"shape": { "base": "game:block/clay/lootvessel"} ,
+
+	"attributesByType":{
+		"storagevessel-blue-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-blue-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-blue-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-blue-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-blue-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cornflower", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-blue-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-seasalt", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-seasalt", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-seasalt", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-seasalt", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-fire-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rutile", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rutile", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rutile", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rutile", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-volcanic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-black-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-loam", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-earthen", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-earthen", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-earthen", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-earthen", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-beehive", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-brown-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-waves", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-waves", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-waves", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-waves", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cowrie", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cowrie", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cowrie", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cowrie", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rime", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rime", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rime", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rime", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-cream-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-wintersea", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-wintersea", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-wintersea", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-wintersea", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-chthonic", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-undergrowth", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-gray-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-ashforest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-orange-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-copper", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-talik", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-cloisonne", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-springflowers", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-springflowers", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-springflowers", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-springflowers", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-red-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-oxblood", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-redglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-collonade", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-brownglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-caveaurora", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-whiteglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rain", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-yellowglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-harvest", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-greenglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-honeydew", "attributes": { "type": "normal" } }
+			}
+		},
+		"storagevessel-tan-blueglaze-glaze":{
+			"beehivekiln":{
+				"0": { "type": "block", "code": "game:storagevessel-rattlesnake", "attributes": { "type": "normal" } },
+				"1": { "type": "block", "code": "game:storagevessel-rattlesnake", "attributes": { "type": "normal" } },
+				"2": { "type": "block", "code": "game:storagevessel-rattlesnake", "attributes": { "type": "normal" } },
+				"3": { "type": "block", "code": "game:storagevessel-rattlesnake", "attributes": { "type": "normal" } }
+			}
+		}
+		},
+	"textures": { 
+		"all": { "base": "block/clay/glaze/{color}", "overlays": [ "block/clay/overlay/{glazecolor}" ] }
+	},
+	"attributes": {
+		"reinforcable": true,
+		"humanoidTraversalCost": 100,
+		"tempGlowMode": 1,
+		"partialAttachable": true,
+		"onTongTransform": {
+			"translation": { "x": -1.3, "y": -1.06, "z": -0.4 },
+			"rotation": { "x": -88, "y": -16, "z": -2 },
+			"scale": 0.7
+		},
+		"handbook": {
+			"groupBy": ["storagevessel-{color}-*-{state}"]
+		}
+	},
+	"blockmaterial": "Ceramic",
+	"creativeinventory": { "general": ["*"], "decorative": ["*"] },
+	"replaceable": 1000,
+	"resistance": 0.8,
+	"maxStackSize": 4,
+	"sideAo": { "all": false },
+	"lightAbsorption": 0,
+	"sounds": {
+		"walk": "walk/stone",
+		"break": "block/ceramicplace",
+		"hit": "block/ceramichit",
+		"place": "block/ceramicplace"
+	},
+	"sideopaque": {
+		"all": false
+	},
+	"sidesolid": {
+		"all": false
+	},
+	"collisionSelectionBox": { "x1": 0.125, "y1": 0, "z1": 0.125, "x2": 0.875, "y2": 1, "z2": 0.875 },
+	"heldTpIdleAnimation": "holdunderarm",
+	"combustiblePropsByType": {
+		"storagevessel-*-*-glaze": {
+			"meltingPoint": 600,
+			"meltingDuration": 45,
+			"smeltedRatio": 1,
+			"smeltingType": "fire",
+			"requiresContainer": true
+		}
+	},
+	"guiTransform": {
+		"scale": 1.25
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1, "y": -0.5, "z": -0.5 },
+		"rotation": { "x": 25, "y": -20, "z": -99 },
+		"scale": 0.56
+	}
+}

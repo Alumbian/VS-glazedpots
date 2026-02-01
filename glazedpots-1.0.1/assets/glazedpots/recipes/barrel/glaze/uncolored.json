@@ -1,0 +1,11 @@
+[
+	{
+		"code": "glaze-uncolored",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "game:waterportion", "litres": 1 },
+			{ "type": "item", "code": "glaze-base", "quantity": 2 }
+		],
+		"output": { "type": "item", "code": "glaze-uncolored", "litres": 1 }
+	}
+]

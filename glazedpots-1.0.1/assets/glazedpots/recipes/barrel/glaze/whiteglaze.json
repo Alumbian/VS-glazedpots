@@ -1,0 +1,11 @@
+[
+	{
+		"code": "glaze-whiteglaze",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-uncolored", "litres": 1 },
+			{ "type": "item", "code": "game:crushed-ilmenite", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "glaze-whiteglaze", "litres": 1 }
+	}
+]

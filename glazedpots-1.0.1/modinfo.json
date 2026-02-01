@@ -1,0 +1,15 @@
+{
+  "type": "content",
+  "modid": "glazedpots",
+  "name": "Glazed Fancy Pots",
+  "authors": [
+    "Alumbian"
+  ],
+  "description": "Glaze your own fancy pottery",
+  "version": "1.0.1",
+  "dependencies": {
+	  "game": "1.21.6",
+	  "survival": "1.21.6",
+    "creative": "1.21.6"
+  }
+}

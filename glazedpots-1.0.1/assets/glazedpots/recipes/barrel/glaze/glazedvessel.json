@@ -1,0 +1,62 @@
+[
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-blueglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-blueglaze-glaze", "stackSize": 1 }
+	},
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-brownglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-brownglaze-glaze", "stackSize": 1 }
+	},
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-greenglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-greenglaze-glaze", "stackSize": 1 }
+	},
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-redglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-redglaze-glaze", "stackSize": 1 }
+	},
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-whiteglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-whiteglaze-glaze", "stackSize": 1 }
+	},
+	{
+		"code": "glazedvessel",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-yellowglaze", "litres": 1, "consumelitres": 1},
+			{ "type": "block", "code": "game:storagevessel-*-fired", "name": "color", "quantity": 1, "allowedVariants": ["black","blue","brown","cream","fire","gray","orange","red","tan"]
+				}
+		],
+		"output": { "type": "block", "code": "storagevessel-{color}-yellowglaze-glaze", "stackSize": 1 }
+	}
+]

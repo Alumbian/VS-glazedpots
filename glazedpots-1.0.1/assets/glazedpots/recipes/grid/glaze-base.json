@@ -1,0 +1,11 @@
+{
+	"ingredientPattern": "SLS,LAL,SLS",
+	"ingredients": {
+		"L": { "type": "item", "code": "game:crushed-alum" },
+		"S": { "type": "item", "code": "game:crushed-quartz" },
+        "A": { "type": "item", "code": "game:crushed-bauxite"}
+	},
+	"width": 3,
+	"height": 3,
+	"output": { "type": "item", "code": "glazedpots:glaze-base", "quantity": 4}
+}

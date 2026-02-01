@@ -1,0 +1,43 @@
+{
+	"code": "glaze",
+	"class": "ItemLiquidPortion",
+	"matterState": "liquid",
+	"variantgroups": [
+		{ "code":"glazecolor", "states": ["blueglaze","brownglaze","greenglaze","redglaze","uncolored","whiteglaze","yellowglaze"] }
+	],
+	"attributes": {
+		"handbook": {
+			"ignoreCreativeInvStacks": true,
+			"groupBy": ["glaze-*"]
+		},
+		"waterTightContainerProps": {
+			"containable": true,
+			"isopaque": false,
+			"itemsPerLitre": 1,
+			"texture": { "base": "block/liquid/glaze/{glazecolor}" },
+			"allowSpill": true,
+			"whenSpilled": { 
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "glaze-{glazecolor}" } 
+			}
+		}
+	},
+	"shape": { "base": "game:item/liquid" },
+	"texture": { "base": "block/liquid/glaze/{glazecolor}" },
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "glazedpots:glaze-{glazecolor}", "makefull": true } ] } } ] } ],
+	"maxstacksize": 50,
+	"materialDensity": 200,
+	"guiTransform": {
+		"translation": { "x": 0, "y": 1, "z": 0 },
+		"rotation": { "x": 123, "y": -33, "z": -13 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 1.4
+	},
+	"fpHandTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 25, "y": 157, "z": -5 }
+	},
+	"tpHandTransform": {
+		"translation": { "x": -1.5, "y": -1, "z": -1.4 }
+	}
+}

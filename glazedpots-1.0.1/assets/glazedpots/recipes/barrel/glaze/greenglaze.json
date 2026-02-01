@@ -1,0 +1,11 @@
+[
+	{
+		"code": "glaze-greenglaze",
+		"sealHours": 0,
+		"ingredients": [
+			{ "type": "item", "code": "glaze-uncolored", "litres": 1 },
+			{ "type": "item", "code": "game:crushed-chromite", "quantity": 1 }
+		],
+		"output": { "type": "item", "code": "glaze-greenglaze", "litres": 1 }
+	}
+]
